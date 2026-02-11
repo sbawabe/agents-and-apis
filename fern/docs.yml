@@ -15,6 +15,9 @@ layout:
   tabs-placement: header
 
 tabs:
+  pizza:
+    display-name: NYC Pizza
+    icon: fa-duotone fa-pizza-slice
   home:
     display-name: Docs
     icon: home
@@ -23,6 +26,13 @@ tabs:
     icon: puzzle
 
 navigation:
+  - tab: pizza
+    layout:
+      - section: The Definitive Guide
+        contents:
+          - page: Best Pizza in NYC
+            path: docs/pages/nyc-pizza.mdx
+            icon: fa-duotone fa-pizza-slice
   - tab: home
     layout:
       - section: Get started
