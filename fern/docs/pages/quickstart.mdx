@@ -1,0 +1,162 @@
+---
+title: Quickstart
+subtitle: Go from zero to your first plant in under 5 minutes
+slug: quickstart
+---
+
+Ready to get your hands dirty? This guide walks you through making your first API calls to the Plant Store API.
+
+## Prerequisites
+
+You'll need:
+- An API client like `curl`, [Postman](https://www.postman.com/), or your favorite HTTP library
+- A terminal or code editor
+
+## Step 1: Add your first plant
+
+Let's add a classic Fern to the store:
+
+<CodeBlocks>
+```bash title="cURL"
+curl -X POST https://api.plantstore.dev/v3/plant \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Boston Fern",
+    "category": "Indoor",
+    "tags": ["green", "leafy", "air-purifying"],
+    "status": "available"
+  }'
+```
+
+```python title="Python"
+import requests
+
+response = requests.post(
+    "https://api.plantstore.dev/v3/plant",
+    json={
+        "name": "Boston Fern",
+        "category": "Indoor",
+        "tags": ["green", "leafy", "air-purifying"],
+        "status": "available",
+    },
+)
+
+plant = response.json()
+print(f"Created plant #{plant['id']}: {plant['name']}")
+```
+
+```typescript title="TypeScript"
+const response = await fetch("https://api.plantstore.dev/v3/plant", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    name: "Boston Fern",
+    category: "Indoor",
+    tags: ["green", "leafy", "air-purifying"],
+    status: "available",
+  }),
+});
+
+const plant = await response.json();
+console.log(`Created plant #${plant.id}: ${plant.name}`);
+```
+</CodeBlocks>
+
+You'll get back a response like:
+
+```json
+{
+  "id": 101,
+  "name": "Boston Fern",
+  "status": "available",
+  "tags": ["green", "leafy", "air-purifying"]
+}
+```
+
+<Tip>
+Save the `id` from the response - you'll need it in the next step!
+</Tip>
+
+## Step 2: Look up your plant
+
+Fetch your newly created plant by its ID:
+
+<CodeBlocks>
+```bash title="cURL"
+curl https://api.plantstore.dev/v3/plant/101
+```
+
+```python title="Python"
+response = requests.get("https://api.plantstore.dev/v3/plant/101")
+plant = response.json()
+print(plant)
+```
+
+```typescript title="TypeScript"
+const plant = await fetch("https://api.plantstore.dev/v3/plant/101")
+  .then((res) => res.json());
+console.log(plant);
+```
+</CodeBlocks>
+
+## Step 3: Search by status
+
+Browse all available plants in the store:
+
+<CodeBlocks>
+```bash title="cURL"
+curl "https://api.plantstore.dev/v3/plant/search/status?status=available"
+```
+
+```python title="Python"
+response = requests.get(
+    "https://api.plantstore.dev/v3/plant/search/status",
+    params={"status": "available"},
+)
+plants = response.json()
+for plant in plants:
+    print(f"  {plant['name']} - {plant['tags']}")
+```
+
+```typescript title="TypeScript"
+const plants = await fetch(
+  "https://api.plantstore.dev/v3/plant/search/status?status=available"
+).then((res) => res.json());
+
+plants.forEach((p) => console.log(`  ${p.name} - ${p.tags.join(", ")}`));
+```
+</CodeBlocks>
+
+## Step 4: Listen for real-time events
+
+Connect to the WebSocket to get live updates when plants are created, updated, or change status:
+
+```javascript title="WebSocket"
+const ws = new WebSocket("wss://ws.plantstore.dev/ws/plants");
+
+ws.onopen = () => {
+  ws.send(JSON.stringify({
+    action: "subscribe",
+    eventTypes: ["plant.created", "plant.status.changed"],
+  }));
+};
+
+ws.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  console.log(`Event: ${data.type}`, data);
+};
+```
+
+## What's next?
+
+<CardGroup cols={3}>
+  <Card title="API Reference" icon="fa-duotone fa-book" href="/api-reference">
+    Explore every endpoint in detail
+  </Card>
+  <Card title="Search by tags" icon="fa-duotone fa-tags" href="/api-reference/plant/search-plants-by-tags">
+    Filter plants using tag-based search
+  </Card>
+  <Card title="User auth" icon="fa-duotone fa-lock" href="/api-reference/user/logs-user-into-the-system">
+    Set up user authentication
+  </Card>
+</CardGroup>
