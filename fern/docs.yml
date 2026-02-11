@@ -1,14 +1,13 @@
 # yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
 
 instances:
-  - url: plantstore.docs.buildwithfern.com # update this to {yourorg}.docs.buildwithfern.com
-    # custom-domain: plantstore.dev # specify your custom domain when you are ready to go live
+  - url: agents-and-apis-2026.docs.buildwithfern.com
 
 ai-search:
   location:
     - docs
 
-title: Fern Docs Starter
+title: Agents and APIs 2026
 
 layout:
   searchbar-placement: header
