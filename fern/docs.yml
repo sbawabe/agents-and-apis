@@ -45,6 +45,9 @@ navigation:
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
+          - page: Food Poems
+            path: docs/pages/food-poems.mdx
+            icon: fa-duotone fa-pizza-slice
       - section: Changelog
         contents:
           - changelog: docs/changelog
