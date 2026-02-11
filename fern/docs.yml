@@ -45,6 +45,11 @@ navigation:
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
+      - section: Fun Reads
+        contents:
+          - page: Best Lovecraft Novels
+            path: docs/pages/lovecraft-novels-ranking.mdx
+            icon: fa-duotone fa-book-skull
       - section: Changelog
         contents:
           - changelog: docs/changelog
