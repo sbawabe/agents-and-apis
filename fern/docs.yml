@@ -15,31 +15,41 @@ layout:
   tabs-placement: header
 
 tabs:
-  pizza:
-    display-name: NYC Pizza
-    icon: fa-duotone fa-pizza-slice
   home:
-    display-name: Docs
+    display-name: Home
     icon: home
   API Reference:
     display-name: API Reference
     icon: puzzle
 
 navigation:
-  - tab: pizza
+  - tab: home
     layout:
-      - section: The Definitive Guide
+      - section: Agents & APIs
         contents:
+          - page: Thank you for attending!
+            path: docs/pages/landing.mdx
+            icon: fa-duotone fa-party-horn
+          - page: Food Poems
+            path: docs/pages/food-poems.mdx
+            icon: fa-duotone fa-pizza-slice
+          - page: Hot Dog Sliminess Rankings
+            path: docs/pages/hot-dog-sliminess-ranking.mdx
+            icon: fa-duotone fa-hotdog
+          - page: Top 10 Winter Activities in NYC
+            path: docs/pages/nyc-winter-activities.mdx
+            icon: fa-duotone fa-snowflake
+          - page: Best Lovecraft Novels
+            path: docs/pages/lovecraft-novels-ranking.mdx
+            icon: fa-duotone fa-book-skull
+          - page: Why Fern is awesome
+            path: docs/pages/why-fern-is-awesome.mdx
+            icon: fa-duotone fa-seedling
           - page: Best Pizza in NYC
             path: docs/pages/nyc-pizza.mdx
             icon: fa-duotone fa-pizza-slice
-  - tab: home
-    layout:
-      - section: Get started
+      - section: Get started with Fern
         contents:
-          - page: Welcome
-            path: docs/pages/welcome.mdx
-            icon: fa-duotone fa-house
           - page: Edit your docs
             path: docs/pages/editing-your-docs.mdx
             icon: fa-duotone fa-pen-to-square
@@ -52,24 +62,9 @@ navigation:
           - page: Customize your docs
             path: docs/pages/customization.mdx
             icon: fa-duotone fa-palette
-          - page: Why Fern is awesome
-            path: docs/pages/why-fern-is-awesome.mdx
-            icon: fa-duotone fa-seedling
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
-          - page: Top 10 Winter Activities in NYC
-            path: docs/pages/nyc-winter-activities.mdx
-            icon: fa-duotone fa-snowflake
-          - page: Hot Dog Sliminess Rankings
-            path: docs/pages/hot-dog-sliminess-ranking.mdx
-            icon: fa-duotone fa-hotdog
-          - page: Food Poems
-            path: docs/pages/food-poems.mdx
-            icon: fa-duotone fa-pizza-slice
-          - page: Best Lovecraft Novels
-            path: docs/pages/lovecraft-novels-ranking.mdx
-            icon: fa-duotone fa-book-skull
       - section: Changelog
         contents:
           - changelog: docs/changelog
