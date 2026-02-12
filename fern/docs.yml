@@ -15,6 +15,9 @@ layout:
   tabs-placement: header
 
 tabs:
+  pizza:
+    display-name: NYC Pizza
+    icon: fa-duotone fa-pizza-slice
   home:
     display-name: Docs
     icon: home
@@ -23,6 +26,13 @@ tabs:
     icon: puzzle
 
 navigation:
+  - tab: pizza
+    layout:
+      - section: The Definitive Guide
+        contents:
+          - page: Best Pizza in NYC
+            path: docs/pages/nyc-pizza.mdx
+            icon: fa-duotone fa-pizza-slice
   - tab: home
     layout:
       - section: Get started
@@ -42,11 +52,18 @@ navigation:
           - page: Customize your docs
             path: docs/pages/customization.mdx
             icon: fa-duotone fa-palette
+          - page: Why Fern is awesome
+            path: docs/pages/why-fern-is-awesome.mdx
+            icon: fa-duotone fa-seedling
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
-      - section: Fun Reads
-        contents:
+          - page: Hot Dog Sliminess Rankings
+            path: docs/pages/hot-dog-sliminess-ranking.mdx
+            icon: fa-duotone fa-hotdog
+          - page: Food Poems
+            path: docs/pages/food-poems.mdx
+            icon: fa-duotone fa-pizza-slice
           - page: Best Lovecraft Novels
             path: docs/pages/lovecraft-novels-ranking.mdx
             icon: fa-duotone fa-book-skull

@@ -1,0 +1,81 @@
+---
+title: Why Fern is awesome
+subtitle: From API definition to SDKs, docs, and beyond
+slug: why-fern-is-awesome
+---
+
+Fern transforms your API definition into production-ready SDKs, documentation, and server boilerplate so you can focus on building your product instead of maintaining infrastructure.
+
+## One source of truth, many outputs
+
+Define your API once using OpenAPI, AsyncAPI, gRPC, or Fern Definition. Fern generates idiomatic client libraries for 10+ languages, interactive documentation, and server stubs from that single source.
+
+```yaml title="generators.yml"
+groups:
+  python-sdk:
+    generators:
+      - name: fernapi/fern-python-sdk
+        output:
+          location: pypi
+          package-name: plantstore
+  typescript-sdk:
+    generators:
+      - name: fernapi/fern-typescript-sdk
+        output:
+          location: npm
+          package-name: "@plantstore/sdk"
+```
+
+## SDKs that feel handwritten
+
+Fern-generated SDKs follow each language's conventions. They include type-safe models, async support, pagination helpers, and retry logic out of the box. Your users get a `POST /plants/{plantId}` endpoint wrapped in a method like:
+
+```python
+client.plants.update(
+    plant_id="plant_001",
+    name="Monstera Deliciosa",
+    watering_schedule="weekly"
+)
+```
+
+No HTTP boilerplate. No manual serialization. Just clean, idiomatic code.
+
+## Docs that stay in sync
+
+Fern Docs generates a full documentation site directly from your API spec. API references, code examples, and changelogs update automatically when your spec changes. The result is a polished site with:
+
+- Interactive API explorer with authentication flows
+- Auto-generated code examples in every SDK language
+- Built-in search and AI-powered chat
+- LLM-optimized endpoints (`/llms.txt`) for AI coding assistants
+
+## Autorelease handles the busywork
+
+When your API spec changes, Fern Autorelease detects the diff, determines the right version bump, regenerates your SDKs, and publishes them to package registries. No manual releases. No version drift.
+
+## Built for teams
+
+Fern fits into existing workflows:
+
+<CardGroup cols={2}>
+  <Card title="GitHub-native" icon="fa-brands fa-github">
+    Preview docs on every PR. Publish on merge. SDK updates go through pull requests for review.
+  </Card>
+  <Card title="Multi-language" icon="fa-duotone fa-code">
+    TypeScript, Python, Java, Go, Ruby, C#, Swift, PHP, Rust, and Postman collections from a single config.
+  </Card>
+  <Card title="Customizable" icon="fa-duotone fa-palette">
+    Full control over branding, layout, components, and custom CSS. Your docs look like your product.
+  </Card>
+  <Card title="AI-ready" icon="fa-duotone fa-robot">
+    Built-in AI search, llms.txt endpoints, and Ask AI chat give your users answers instantly.
+  </Card>
+</CardGroup>
+
+## Get started
+
+Fern takes minutes to set up and saves hours every release cycle. Define your API, run `fern generate`, and ship SDKs and docs that your users will love.
+
+<Card href="https://buildwithfern.com" icon="fa-duotone fa-seedling">
+  Learn more at buildwithfern.com
+</Card>
