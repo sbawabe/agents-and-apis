@@ -67,6 +67,9 @@ navigation:
           - page: Food Poems
             path: docs/pages/food-poems.mdx
             icon: fa-duotone fa-pizza-slice
+          - page: Best Lovecraft Novels
+            path: docs/pages/lovecraft-novels-ranking.mdx
+            icon: fa-duotone fa-book-skull
       - section: Changelog
         contents:
           - changelog: docs/changelog
