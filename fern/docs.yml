@@ -42,6 +42,9 @@ navigation:
           - page: Customize your docs
             path: docs/pages/customization.mdx
             icon: fa-duotone fa-palette
+          - page: Why Fern is awesome
+            path: docs/pages/why-fern-is-awesome.mdx
+            icon: fa-duotone fa-seedling
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
