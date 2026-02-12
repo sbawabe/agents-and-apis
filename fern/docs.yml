@@ -48,6 +48,9 @@ navigation:
           - page: Best Pizza in NYC
             path: docs/pages/nyc-pizza.mdx
             icon: fa-duotone fa-pizza-slice
+          - page: Plant Myths vs. Reality
+            path: docs/pages/plant-myths.mdx
+            icon: fa-duotone fa-seedling
       - section: Get started with Fern
         contents:
           - page: Edit your docs
