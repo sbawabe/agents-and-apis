@@ -33,24 +33,21 @@ navigation:
           - page: Thank you for attending!
             path: docs/pages/landing.mdx
             icon: fa-duotone fa-party-horn
-          - page: Welcome
-            path: docs/pages/welcome.mdx
-            icon: fa-duotone fa-house
-          - page: Why Fern is awesome
-            path: docs/pages/why-fern-is-awesome.mdx
-            icon: fa-duotone fa-seedling
-          - page: Top 10 Winter Activities in NYC
-            path: docs/pages/nyc-winter-activities.mdx
-            icon: fa-duotone fa-snowflake
-          - page: Hot Dog Sliminess Rankings
-            path: docs/pages/hot-dog-sliminess-ranking.mdx
-            icon: fa-duotone fa-hotdog
           - page: Food Poems
             path: docs/pages/food-poems.mdx
             icon: fa-duotone fa-pizza-slice
+          - page: Hot Dog Sliminess Rankings
+            path: docs/pages/hot-dog-sliminess-ranking.mdx
+            icon: fa-duotone fa-hotdog
+          - page: Top 10 Winter Activities in NYC
+            path: docs/pages/nyc-winter-activities.mdx
+            icon: fa-duotone fa-snowflake
           - page: Best Lovecraft Novels
             path: docs/pages/lovecraft-novels-ranking.mdx
             icon: fa-duotone fa-book-skull
+          - page: Why Fern is awesome
+            path: docs/pages/why-fern-is-awesome.mdx
+            icon: fa-duotone fa-seedling
       - section: Get started with Fern
         contents:
           - page: Edit your docs
