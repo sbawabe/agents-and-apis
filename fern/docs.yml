@@ -58,6 +58,9 @@ navigation:
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
+          - page: Hot Dog Sliminess Rankings
+            path: docs/pages/hot-dog-sliminess-ranking.mdx
+            icon: fa-duotone fa-hotdog
           - page: Food Poems
             path: docs/pages/food-poems.mdx
             icon: fa-duotone fa-pizza-slice
