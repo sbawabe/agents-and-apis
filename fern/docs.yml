@@ -109,9 +109,9 @@ theme:
   footer-nav: minimal
 
 logo:
-  dark: docs/assets/logo-dark.svg
-  light: docs/assets/logo.svg
-  height: 20
+  dark: docs/assets/fern_agents_and_apis_white.png
+  light: docs/assets/fern_agents_and_apis.png
+  height: 28
   href: https://buildwithfern.com
 
 favicon: docs/assets/favicon.svg
