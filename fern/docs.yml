@@ -30,9 +30,9 @@ navigation:
           - page: Welcome
             path: docs/pages/welcome.mdx
             icon: fa-duotone fa-house
-          - page: Quickstart
-            path: docs/pages/quickstart.mdx
-            icon: fa-duotone fa-rocket
+          - page: Plant Myths vs. Reality
+            path: docs/pages/plant-myths.mdx
+            icon: fa-duotone fa-seedling
           - page: Edit your docs
             path: docs/pages/editing-your-docs.mdx
             icon: fa-duotone fa-pen-to-square
