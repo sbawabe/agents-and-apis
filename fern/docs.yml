@@ -58,6 +58,9 @@ navigation:
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
+          - page: Top 10 Winter Activities in NYC
+            path: docs/pages/nyc-winter-activities.mdx
+            icon: fa-duotone fa-snowflake
           - page: Hot Dog Sliminess Rankings
             path: docs/pages/hot-dog-sliminess-ranking.mdx
             icon: fa-duotone fa-hotdog
