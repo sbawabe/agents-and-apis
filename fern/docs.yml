@@ -16,7 +16,7 @@ layout:
 
 tabs:
   home:
-    display-name: Docs
+    display-name: Home
     icon: home
   API Reference:
     display-name: API Reference
@@ -25,14 +25,34 @@ tabs:
 navigation:
   - tab: home
     layout:
-      - section: Get started
+      - section: Agents & APIs
         contents:
-          - page: Welcome
-            path: docs/pages/welcome.mdx
-            icon: fa-duotone fa-house
+          - page: Thank you for attending!
+            path: docs/pages/landing.mdx
+            icon: fa-duotone fa-party-horn
+          - page: Food Poems
+            path: docs/pages/food-poems.mdx
+            icon: fa-duotone fa-pizza-slice
+          - page: Hot Dog Sliminess Rankings
+            path: docs/pages/hot-dog-sliminess-ranking.mdx
+            icon: fa-duotone fa-hotdog
+          - page: Top 10 Winter Activities in NYC
+            path: docs/pages/nyc-winter-activities.mdx
+            icon: fa-duotone fa-snowflake
+          - page: Best Lovecraft Novels
+            path: docs/pages/lovecraft-novels-ranking.mdx
+            icon: fa-duotone fa-book-skull
+          - page: Why Fern is awesome
+            path: docs/pages/why-fern-is-awesome.mdx
+            icon: fa-duotone fa-seedling
+          - page: Best Pizza in NYC
+            path: docs/pages/nyc-pizza.mdx
+            icon: fa-duotone fa-pizza-slice
           - page: Plant Myths vs. Reality
             path: docs/pages/plant-myths.mdx
             icon: fa-duotone fa-seedling
+      - section: Get started with Fern
+        contents:
           - page: Edit your docs
             path: docs/pages/editing-your-docs.mdx
             icon: fa-duotone fa-pen-to-square
@@ -70,12 +90,9 @@ navigation:
             contents: []
 
 navbar-links:
-  - type: minimal
-    text: Fork this repo
-    url: https://github.com/fern-api/docs-starter
   - type: filled
-    text: Dashboard
-    url: https://dashboard.buildwithfern.com
+    text: Start for free
+    url: https://dashboard.buildwithfern.com/sign-up?redirect_on_login=%2Fget-started
   - type: github
     value: https://github.com/fern-api/fern
       
@@ -92,9 +109,9 @@ theme:
   footer-nav: minimal
 
 logo:
-  dark: docs/assets/logo-dark.svg
-  light: docs/assets/logo.svg
-  height: 20
+  dark: docs/assets/fern_agents_and_apis_white.png
+  light: docs/assets/fern_agents_and_apis.png
+  height: 28
   href: https://buildwithfern.com
 
 favicon: docs/assets/favicon.svg
