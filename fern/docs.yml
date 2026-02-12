@@ -15,49 +15,30 @@ layout:
   tabs-placement: header
 
 tabs:
+  home:
+    display-name: Home
+    icon: home
   pizza:
     display-name: NYC Pizza
     icon: fa-duotone fa-pizza-slice
-  home:
-    display-name: Docs
-    icon: home
   API Reference:
     display-name: API Reference
     icon: puzzle
 
 navigation:
-  - tab: pizza
-    layout:
-      - section: The Definitive Guide
-        contents:
-          - page: Best Pizza in NYC
-            path: docs/pages/nyc-pizza.mdx
-            icon: fa-duotone fa-pizza-slice
   - tab: home
     layout:
-      - section: Get started
+      - section: Agents & APIs
         contents:
+          - page: Thank you for attending!
+            path: docs/pages/landing.mdx
+            icon: fa-duotone fa-party-horn
           - page: Welcome
             path: docs/pages/welcome.mdx
             icon: fa-duotone fa-house
-          - page: Edit your docs
-            path: docs/pages/editing-your-docs.mdx
-            icon: fa-duotone fa-pen-to-square
-          - page: Write content
-            path: docs/pages/writing-content.mdx
-            icon: fa-duotone fa-file-lines
-          - page: Set up navigation
-            path: docs/pages/navigation.mdx
-            icon: fa-duotone fa-sitemap
-          - page: Customize your docs
-            path: docs/pages/customization.mdx
-            icon: fa-duotone fa-palette
           - page: Why Fern is awesome
             path: docs/pages/why-fern-is-awesome.mdx
             icon: fa-duotone fa-seedling
-          - page: Support
-            path: docs/pages/support.mdx
-            icon: fa-duotone fa-headset
           - page: Top 10 Winter Activities in NYC
             path: docs/pages/nyc-winter-activities.mdx
             icon: fa-duotone fa-snowflake
@@ -70,9 +51,33 @@ navigation:
           - page: Best Lovecraft Novels
             path: docs/pages/lovecraft-novels-ranking.mdx
             icon: fa-duotone fa-book-skull
+      - section: Get started with Fern
+        contents:
+          - page: Edit your docs
+            path: docs/pages/editing-your-docs.mdx
+            icon: fa-duotone fa-pen-to-square
+          - page: Write content
+            path: docs/pages/writing-content.mdx
+            icon: fa-duotone fa-file-lines
+          - page: Set up navigation
+            path: docs/pages/navigation.mdx
+            icon: fa-duotone fa-sitemap
+          - page: Customize your docs
+            path: docs/pages/customization.mdx
+            icon: fa-duotone fa-palette
+          - page: Support
+            path: docs/pages/support.mdx
+            icon: fa-duotone fa-headset
       - section: Changelog
         contents:
           - changelog: docs/changelog
+  - tab: pizza
+    layout:
+      - section: The Definitive Guide
+        contents:
+          - page: Best Pizza in NYC
+            path: docs/pages/nyc-pizza.mdx
+            icon: fa-duotone fa-pizza-slice
   - tab: API Reference
     layout:
       - section: Overview
