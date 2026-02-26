@@ -65,6 +65,9 @@ navigation:
           - page: Customize your docs
             path: docs/pages/customization.mdx
             icon: fa-duotone fa-palette
+          - page: Ferns
+            path: docs/pages/ferns.mdx
+            icon: fa-duotone fa-leaf
           - page: Support
             path: docs/pages/support.mdx
             icon: fa-duotone fa-headset
